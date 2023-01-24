@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Perfect WebSite</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/2f4666f7a8.js"crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+  	<div class="loader"></div>
+  	<h1 class="title">Stolen Things</h1>
+  </section>	
+<div class="container"></div>    
+
+<img src="images/13.png" id="menuIcon">
+
+<div class="menu-box" id="menuBox">
+	<ul>
+		<li><a href="Christmas images.html">Images</a></li>
+		<li><a href="Musics.html">Musics</a></li>
+		<li><a href="Videos.html">Videos</a></li>
+		<li><a href="GChannel.html">Channel</a></li>
+	</ul>	
+</div>
+
+<script>
+	
+let menuBox = document.getElementById('menuBox')
+let menuIcon = document.getElementById('menuIcon')
+
+menuIcon.onclick = function(){
+	menuBox.classList.toggle("open-menu")
+ 
+     if (menuBox.classList.contains("open-menu")){
+     	menuIcon.src = "images/11.png";
+     }
+     else{
+     	menuIcon.src = "images/13.png";
+     }
+}
+</script>
+         <div class="header">
+		<div class="side-nav">
+			<a href="#" class="logo">
+				<img src="images/15.png" class="logo-img">
+				<img src="images/15.png" class="logo-icon">				
+			</a>
+			
+			  <ul class="nav-links">
+			  	<li><a href="General Programs.html" href="#"><i class="fa-solid fa-folder-open"></i><p>Programs</p></a></li>
+			  	<li><a href="Videos.html" href="#"><i class="fa-brands fa-youtube"></i><p>Videos</p></a></li>
+			  	<li><a href="GChannel.html" href="#"><i class="fa-brands fa-telegram"></i><p>Channel</p></a></li>
+			  	<li><a href="Edit.html" href="" href="#"><i class="fa-solid fa-circle-user"></i><p>Profile</p></a></li>
+			  	<li><a href="GDesigner.html" href="#"><i class="fa-solid fa-sliders"></i><p>Designer</p></a></li>
+			  	<li><a href="Rating.html" href="#"><i class="fa-solid fa-star"></i><p>Rating</p></a></li>
+			  	<div class="active"></div>
+			  </ul>
+		</div>
+	</div>
+
+<i class="fa-regular fa-axe"></i>
+<b>
+	<div class="container2">
+		<div class="text" style="--j:0;">
+			<span style="--i:0">2</span>
+			<span style="--i:1">3</span>
+			<span style="--i:2">4</span>
+			<span style="--i:3">5</span>
+		</div>
+		<div class="text" style="--j:1;">
+			<span style="--i:0">0</span>
+			<span style="--i:1">1</span>
+			<span style="--i:2">2</span>
+			<span style="--i:3">3</span>
+		</div>
+		<div class="text" style="--j:2;">
+			<span style="--i:0">2</span>
+			<span style="--i:1">3</span>
+			<span style="--i:2">4</span>
+			<span style="--i:3">5</span>
+		</div>
+		<div class="text" style="--j:3;">
+			<span style="--i:0">2</span>
+			<span style="--i:1">3</span>
+			<span style="--i:2">4</span>
+			<span style="--i:3">5</span>
+		</div>
+	</div>
+</b>
+<h2>©2023 Stolen Things | All Rights Reserved</h2>
+
+</body>
+</html>
