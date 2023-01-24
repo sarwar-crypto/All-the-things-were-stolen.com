@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Account</title>
+	<link rel="stylesheet" type="text/css" href="Contacts.css" href="index.html">
+</head>
+<body>
+
+<div class="hero">
+	<h1>Create an account</h1>
+	<div class="signup-box">
+		<div class="left-box">
+			<form method="post" action="Contacts">
+				<input type="text" placeholder="Your Name" required class="input-box">
+				<input type="text" placeholder="Username" required class="input-box">
+				<input type="email" placeholder="Your email" required class="input-box">
+				<div class="input-box">
+				<input type="Password" placeholder="Password" required class="input-box" id="password">
+				<img src="images/eyec.png" id="eyeicon">
+			    </div>
+				
+				<input type="checkbox" id="terms">
+				<label for="terms">I accept the terms & conditions.</label>
+				<link href="index.html" rel="stylesheet" href="#" href="index.html" href="index.html" type="text/css" href="index.html" href="All the things were stolen" href="#" href="index.html" href="index.html"><button href="#" href="index.html"  type="submit">SIGN UP<span>&#x27f6;</span></button></a>
+			</form>
+		</div>
+		</div>
+	<p class="login-msg">I already have an account? <a href="#">Login Now</a></p>
+</div>	
+
+<script>
+
+	let eyeicon = document.getElementById('eyeicon');
+	let password = document.getElementById('password');
+  
+    eyeicon.onclick = function(){
+    	if(password.type == "password"){
+    		password.type = "text";
+    		eyeicon.src = "images/11.png";
+    	}else{	
+    		password.type = "password";
+    		eyeicon.src = "images/eyec.png";
+    	}
+    }
+
+</script>
+
+
+
+</body>
+</html>

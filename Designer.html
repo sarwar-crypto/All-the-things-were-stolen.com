@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Designer</title>
+	<link rel="stylesheet" href="Designer.css">
+</head>
+<body>
+    <script>
+        function rain(){
+            let amount = 5;
+            let body = document.querySelector('body');
+            let i = 0;
+            while(i < amount){
+                let drop = document.createElement('i');
+                body.appendChild(drop);
+                i++
+            }
+        }
+
+        rain();
+    </script>
+<div id="main">
+            <nav>
+                <ul>
+                   <li><a href="Index.html" href="index.html">Home</a></li>
+                   <li><a href="Index.html" href="Programs.html">Back</a></li>
+                   <li><a href="Designer.html" href="Designer.html">Designer</a></li>
+                   <li><a href="Contacts.html" href="Contacts.html">Account</a></li>     
+                </ul>
+            </nav>
+        </div>    
+<div class="hero">
+	<h2><button class="btn" id="btn">Designed and Created by
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+   
+     </button>
+    </h2></div>
+
+<script>
+	
+    let btn = document.getElementryById("btn");
+    let spans = document.getElementryByTagName("span");
+
+    btn.onclick = function(){
+    	for(span of spans){
+    		span.classList.add("anim")
+    	} 
+    	setTimeout(function(){
+    	    for(span of spans){
+    		span.classList.remove("anim")
+    	}
+        },500)
+    }
+
+</script>
+
+
+    
+
+
+<h2 class="glitch">SARWAR_KING</h2>
+
+
+</body></html>

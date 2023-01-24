@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #161a23;
+}
+
+#main nav ul {
+	float: right;
+	font-family: 'Raleway', sans-serif;
+	margin-right: 15px;
+	margin-top: 20px;
+	border: px solid #fd4a47;
+	font-family: 'Raleway', sans-serif;
+}
+
+#main nav ul li {
+	list-style-type: none;
+	display: inline-block; 
+	font-family: 'Raleway', sans-serif; 
+	margin: 10px;
+	line-height: 60px;
+	border: px solid #fd4a47;
+	font-family: 'Raleway', sans-serif;
+}	
+
+#main nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	padding: 7px 7px;
+	transition: 0.4s all ease-out;
+	border: 1px solid #fd4a47;
+	font-family: 'Raleway', sans-serif ;
+}
+#main nav ul li a i{
+	margin-right: 20px;
+}
+#main nav ul li a:hover i{
+	color: #2dfc52;
+	filter: drop-shadow(0px 0px 2px #2dfc52) drop-shadow(0px 0px 5px #2dfc52) drop-shadow(0px 0px 15px #2dfc52);  
+}
+#main nav ul li a.active, 
+#main nav ul li a:hover {
+	background: #fd4a47;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	transition: 0.4s all ease-out;
+	border: 1px solid #fd4a47;
+	font-family: 'Raleway', sans-serif; 
+}
+.main1{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 170px;
+}
+.main1 .navigation{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.main1 .navigation span{
+	position: absolute;
+	width: 7px;
+	height: 7px;
+    background: #fff;
+    transform: translate(calc(14px * var(--x)),calc(14px * var(--y)));
+    transition: transform 0.5s, width 0.5s,height 0.5s, background 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main1 .navigation.active span{
+	width: 45px;
+	height: 45px;
+	background: #1f2536;
+	transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+}
+.main1 .navigation span i{
+	transition: 0.5s;
+	font-size: 0em;
+	color: #fff;
+}
+.main1 .navigation.active span i{
+	font-size: 1.35em;
+}
+.main1 .navigation.active span:hover i{
+	color: #2dfc52;
+	filter: drop-shadow(0px 0px 2px #2dfc52) drop-shadow(0px 0px 5px #2dfc52) drop-shadow(0px 0px 15px #2dfc52);
+}
+.close{
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	background: #fff;
+	transition: 0.5s;
+	transition-delay: 0.4s;
+	pointer-events: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main1 .navigation.active ~ .close{
+	width: 40px;
+	height: 40px;
+	pointer-events: initial;
+	transition-delay: 0.8s;
+	background: #2dfc52;
+}
+.main1 .navigation ~ .close i{
+	font-size: 2em;
+	scale: 0;
+	color: #10131c;
+	transition: 0.5s;
+}
+.main1 .navigation.active ~ .close i{
+	scale: 1;
+	transition-delay: 1s;
+}

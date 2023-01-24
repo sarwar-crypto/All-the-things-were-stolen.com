@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	background-image: linear-gradient(rgba(42, 58, 74, 0.85),rgba(42, 58, 74, 0.85)), url(Programs.jpg);  
+}
+#main nav ul {
+	float: right;
+	font-family: 'Raleway', sans-serif;
+	margin-right: 15px;
+	margin-top: 20px;
+	border: px solid #fd4a47;
+	font-family: 'Raleway', sans-serif;
+}
+
+#main nav ul li {
+	list-style-type: none;
+	display: inline-block; 
+	font-family: 'Raleway', sans-serif; 
+	margin: 10px;
+	line-height: 60px;
+	border: px solid #fd4a47;
+	font-family: 'Raleway', sans-serif;
+}	
+
+#main nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	padding: 7px 7px;
+	transition: 0.4s all ease-out;
+	border: 1px solid #fd4a47;
+	font-family: 'Raleway', sans-serif ;
+}
+
+#main nav ul li a.active, 
+#main nav ul li a:hover {
+	background: #fd4a47;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	transition: 0.4s all ease-out;
+	border: px solid #fd4a47;
+	font-family: 'Raleway', sans-serif; 
+}
+.text {
+	transform: translate(-50%,-50);
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	top: 20%;
+	left: 9%;
+	font-family: 'Raleway', sans-serif;
+}
+
+.text h1 {
+	top: 20%;
+	color: #fd4a47;
+	font-size: 70px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text span {
+	width: 4px;
+	height: 45px;
+	font-family: 'Raleway', sans-serif;
+	background: #fd4a47;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 5%;
+	left: -2%;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.text p {
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	line-height: 25px;
+	letter-spacing: 2px;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+button{
+	background-color: #18f98f;
+	border: none;
+	transform: translate(-50, -50);
+	top: 140%;
+	padding: 20px 50ppx;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+.text .btn:hover {
+	background: transparent;
+	border: 1px solid #fff;
+	transition: 0.5s all ease-out;
+	font-family: 'Raleway', sans-serif;
+}
+.text .btn {
+	width: 250px;
+	height: 35px;
+	border: none;
+	background: #fd4a47;
+	text-decoration-color: black;
+	color: #fff;
+	transition: 0.5s all ease-out;
+	margin-top: 10px;
+	font-family: 'Raleway', sans-serif;
+}

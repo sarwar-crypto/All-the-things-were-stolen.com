@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Editing Page</title>
+	<link rel="stylesheet" type="text/css" href="Edit.css">
+</head>
+<body>
+	<div class="container">
+		
+	</div>
+	<center>
+		<div class="box">
+			<image src="images/18.png"></image>
+			<input type="file" name="" id="file" accept="image/*">
+			<label for="file">Edit Picture</label>
+			<input type="text" name="" placeholder="User Name">
+			<input type="email" name="" placeholder="Email ID">
+			<input type="text" name="" placeholder="PHONE exp:.905722007">
+			<input type="text" name="" placeholder="Date of Birth exp:. 12-25-2005">
+			<input type="text" name="" placeholder="GENDER exp:.Male or Female">
+			<button type="submit" class="btn" onclick="openPopup()">Submit</button>
+		</div>
+		<div class="popup" id="popup">
+			<img src="images/10.png">
+			<h2>Thank You!</h2>
+			<p>Your details has been successfully <br>submitted. Thanx!</p>
+			<button type="button" onclick="closePopup()">OK</button>
+		</div>
+	</center>
+<script>
+let popup = document.getElementById('popup');
+
+function openPopup(){
+	popup.classList.add("open-popup");
+}
+function closePopup(){
+	popup.classList.remove("open-popup");
+}	
+</script>
+</body>
+</html>
